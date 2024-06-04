@@ -1,0 +1,1 @@
+select productName, productVendor from products as p where not exists(select*from orderdetails where orderdetails.productCode=p.productCode);
